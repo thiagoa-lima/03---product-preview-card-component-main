@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+.grid {
+    max-width: 700px;
+    margin: auto 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    background-color: #FFF;
+    border-radius: 15px;
+}
+
+.imagem-perfume {
+    max-width: 100%;
+    display: inherit;
+}
+
+.card-content {
+    padding: 40px;
+}
+
+.card-content h6 {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.card-content h2 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 38px;
+    padding-top: 25px;
+ 
+}
+
+.card-content p {
+    padding-top: 25px;
+    line-height: 29px;
+    font-size: 16px;
+}
+
+.price {
+    display: flex;
+ 
+}
+
+.price .preco-atual{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 38px;
+    
+}
+
+.price .preco-inicial{
+    padding-left: 20px;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    width: 100%;
+    color: #FFF;
+    border-radius: 10px;
+    height: 55px;
+    margin-top: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color .5s;
+
+}
+
+button:hover {
+    background-color:hsl(158, 36%, 20%);
+}
+
+button .cart {
+    padding-right: 7px;
+}
+
+@media screen and (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem-perfume {
+        max-height: 290px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .card-content {
+        display: block;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
